@@ -6,10 +6,36 @@ body {
 }
 
 .hero {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, #051937 0%, #061733 100%);
   color: #fff;
   padding: 80px 20px;
   text-align: center;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.shape1 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at 30% 30%, #ff0080, #8e00ff);
+  top: -50px;
+  left: -50px;
+}
+
+.shape2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at 70% 70%, #00ffc6, #0057ff);
+  top: 100px;
+  right: -100px;
 }
 
 .section {
